@@ -14,6 +14,14 @@ namespace CatchButton
 
             score = score + 10;
             LabelScore.Text = $"점수: {score}";
+
+            int newWidth = (int)(Button_true.Width * 0.9);
+            int newHeight = (int)(Button_true.Height * 0.9);
+
+            if (newWidth < 10) newWidth = 10;
+            if (newHeight < 10) newHeight = 10;
+
+            Button_true.Size = new Size(newWidth, newHeight);
         }
 
         private void Button_true_MouseEnter(object sender, EventArgs e)
