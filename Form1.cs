@@ -2,6 +2,7 @@ namespace CatchButton
 {
     public partial class Form1 : Form
     {
+        int score = 100;
         public Form1()
         {
             InitializeComponent();
@@ -10,6 +11,9 @@ namespace CatchButton
         private void Button_true_Click(object sender, EventArgs e)
         {
             MessageBox.Show("축하합니다! 버튼을 잡았어요!");
+
+            score = score + 10;
+            LabelScore.Text = $"점수: {score}";
         }
 
         private void Button_true_MouseEnter(object sender, EventArgs e)
@@ -25,6 +29,15 @@ namespace CatchButton
             Button_true.Location = new Point(nextX, nextY);
 
             this.Text = $"(버튼 위치 : {nextX}, {nextY})";
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (score > 0)
+            {
+                score = score - 10;
+                LabelScore.Text = $"점수: {score}";
+            }
         }
     }
 }

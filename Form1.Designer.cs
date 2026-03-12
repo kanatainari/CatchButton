@@ -30,6 +30,7 @@
         {
             Button_true = new Button();
             label1 = new Label();
+            LabelScore = new Label();
             SuspendLayout();
             // 
             // Button_true
@@ -52,15 +53,27 @@
             label1.Size = new Size(0, 25);
             label1.TabIndex = 2;
             // 
+            // LabelScore
+            // 
+            LabelScore.AutoSize = true;
+            LabelScore.Font = new Font("맑은 고딕", 18F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            LabelScore.Location = new Point(12, 18);
+            LabelScore.Name = "LabelScore";
+            LabelScore.Size = new Size(190, 48);
+            LabelScore.TabIndex = 3;
+            LabelScore.Text = "점수 : 100";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1459, 859);
+            Controls.Add(LabelScore);
             Controls.Add(label1);
             Controls.Add(Button_true);
             Name = "Form1";
             Text = "Form1";
+            MouseClick += Form1_MouseClick;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -69,5 +82,6 @@
 
         private Button Button_true;
         private Label label1;
+        private Label LabelScore;
     }
 }
