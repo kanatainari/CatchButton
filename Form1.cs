@@ -5,6 +5,7 @@ namespace CatchButton
         int score = 100;
 
         Size originalSize = new Size(729, 218);
+        Font originalFont = new Font("맑은 고딕", 48, FontStyle.Bold);
 
         public Form1()
         {
@@ -25,6 +26,13 @@ namespace CatchButton
             if (newHeight < 10) newHeight = 10;
 
             Button_true.Size = new Size(newWidth, newHeight);
+
+            float currentFontSize = Button_true.Font.Size;
+            float newFontSize = currentFontSize * 0.9f;
+
+            if (newFontSize < 5f) newFontSize = 5f;
+
+            Button_true.Font = new Font(Button_true.Font.FontFamily, newFontSize, Button_true.Font.Style);
         }
 
         private void Button_true_MouseEnter(object sender, EventArgs e)
@@ -59,6 +67,7 @@ namespace CatchButton
                     score = 100;
                     LabelScore.Text = $"점수: {score}";
                     Button_true.Size = originalSize;
+                    Button_true.Font = originalFont;
                 }
                 else
                 {
