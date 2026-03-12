@@ -28,18 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Button_true = new Button();
             SuspendLayout();
+            // 
+            // Button_true
+            // 
+            Button_true.Font = new Font("맑은 고딕", 48F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            Button_true.Location = new Point(368, 313);
+            Button_true.Name = "Button_true";
+            Button_true.Size = new Size(729, 218);
+            Button_true.TabIndex = 1;
+            Button_true.Text = "나를 잡아봐";
+            Button_true.UseVisualStyleBackColor = true;
+            Button_true.Click += Button_true_Click;
+            Button_true.MouseEnter += Button_true_MouseEnter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1459, 859);
+            Controls.Add(Button_true);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button Button_true;
     }
 }

@@ -7,12 +7,12 @@ namespace CatchButton
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button_true_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_MouseEnter(object sender, EventArgs e)
+        private void Button_true_MouseEnter(object sender, EventArgs e)
         {
             Random rd = new Random();
 
