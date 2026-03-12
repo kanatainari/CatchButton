@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             Button_true = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // Button_true
@@ -43,19 +44,30 @@
             Button_true.Click += Button_true_Click;
             Button_true.MouseEnter += Button_true_MouseEnter;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(896, 117);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 25);
+            label1.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1459, 859);
+            Controls.Add(label1);
             Controls.Add(Button_true);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button Button_true;
+        private Label label1;
     }
 }

@@ -9,7 +9,7 @@ namespace CatchButton
 
         private void Button_true_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("축하합니다! 버튼을 잡았어요!", "게임 성공");
         }
 
         private void Button_true_MouseEnter(object sender, EventArgs e)
