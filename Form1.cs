@@ -3,6 +3,9 @@ namespace CatchButton
     public partial class Form1 : Form
     {
         int score = 100;
+
+        Size originalSize = new Size(729, 218);
+
         public Form1()
         {
             InitializeComponent();
@@ -45,6 +48,22 @@ namespace CatchButton
             {
                 score = score - 10;
                 LabelScore.Text = $"점수: {score}";
+            }
+
+            if (score <= 0)
+            {
+                DialogResult result = MessageBox.Show("점수가 0점이 되었습니다. 재도전하시겠습니까?", "게임 오버", MessageBoxButtons.RetryCancel);
+
+                if (result == DialogResult.Retry)
+                {
+                    score = 100;
+                    LabelScore.Text = $"점수: {score}";
+                    Button_true.Size = originalSize;
+                }
+                else
+                {
+                    Application.Exit();
+                }
             }
         }
     }
