@@ -30,3 +30,8 @@ https://github.com/user-attachments/assets/a1bb50fb-afd0-4c18-9714-15637adaab6b
 - 점수가 0점이 되면 게임오버 메시지와 함께 재시도 여부를 묻는다.
 - 재시도 버튼을 누르면 게임은 처음부터 다시 시작된다.
 - 취소 버튼을 누르면 게임은 끝난다.
+
+### 4단계 추가
+https://github.com/user-attachments/assets/fec26a6f-ff2d-44c9-aa69-3268e6dfd3ad
+- 버튼의 크기가 감소할 때 버튼 내 텍스트의 폰트도 감소한다..
+- 버튼의 위치를 좌표로 표현한다.
