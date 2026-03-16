@@ -18,6 +18,7 @@ https://github.com/user-attachments/assets/5f85e4e0-711d-4403-abd9-75e538fc1932
 
 ### 2단계
 <img width="725" height="447" alt="스크린샷 2026-03-12 165315" src="https://github.com/user-attachments/assets/467ea40c-f519-4ae9-aca5-578d57df22ab" />
+
 - 버튼을 잡으면 축하 메시지를 띄운다.
 (메시지 창이 녹화에 담기지 않아 스크린 샷 첨부.)
 
@@ -31,6 +32,7 @@ https://github.com/user-attachments/assets/a1bb50fb-afd0-4c18-9714-15637adaab6b
 
 ### 4단계
 <img width="1450" height="897" alt="image" src="https://github.com/user-attachments/assets/9653add0-b9aa-44a5-b465-a319d506b2c7" />
+
 - 점수가 0점이 되면 게임오버 메시지와 함께 재시도 여부를 묻는다.
 - 재시도 버튼을 누르면 게임은 처음부터 다시 시작된다.
 - 취소 버튼을 누르면 게임은 끝난다.
