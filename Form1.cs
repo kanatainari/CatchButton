@@ -52,11 +52,16 @@ namespace CatchButton
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
+            this.BackColor = Color.Tomato;
+            this.Refresh();
             if (score > 0)
             {
                 score = score - 10;
                 LabelScore.Text = $"점수: {score}";
             }
+
+            System.Threading.Thread.Sleep(100);
+            this.BackColor = SystemColors.Control;
 
             if (score <= 0)
             {
@@ -74,6 +79,11 @@ namespace CatchButton
                     Application.Exit();
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
