@@ -44,5 +44,7 @@ https://github.com/user-attachments/assets/fec26a6f-ff2d-44c9-aa69-3268e6dfd3ad
 
 ### A/S
 https://github.com/user-attachments/assets/f6774e15-54d4-4474-8979-fa9dfcfbc5b6
-- 버튼이 아닌 배경을 잘못 클릭하면, 화면이 잠시 빨간색으로 변한다.
+- 버튼이 아닌 배경을 잘못 클릭하면 화면이 잠시 빨간색으로 변한다.
+
+- 버튼을 클릭했을 때, 버튼이 잠시 초록색으로 변한다.
 
