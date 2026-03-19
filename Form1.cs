@@ -4,20 +4,30 @@ namespace CatchButton
     {
         int score = 100;
 
+        // 게임 상태
         Size originalSize = new Size(729, 218);
         Font originalFont = new Font("맑은 고딕", 48, FontStyle.Bold);
+
+        // 랜덤 생성기는 필드로 하나만 생성 (시드 중복 방지)
+        Random rd = new Random();
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Button_true_Click(object sender, EventArgs e)
+        private async void Button_true_Click(object sender, EventArgs e)
         {
             MessageBox.Show("축하합니다! 버튼을 잡았어요!");
 
+            Button_true.BackColor = Color.Lime;
+            Button_true.Refresh();
+
             score = score + 10;
             LabelScore.Text = $"점수: {score}";
+
+            await Task.Delay(100);
+            Button_true.BackColor = SystemColors.Control;
 
             int newWidth = (int)(Button_true.Width * 0.9);
             int newHeight = (int)(Button_true.Height * 0.9);
@@ -37,13 +47,11 @@ namespace CatchButton
 
         private void Button_true_MouseEnter(object sender, EventArgs e)
         {
-            Random rd = new Random();
-
             int maxX = this.ClientSize.Width - Button_true.Width;
             int maxY = this.ClientSize.Height - Button_true.Height;
 
-            int nextX = rd.Next(0, maxX);
-            int nextY = rd.Next(0, maxY);
+            int nextX = rd.Next(0, Math.Max(1, maxX));
+            int nextY = rd.Next(0, Math.Max(1, maxY));
 
             Button_true.Location = new Point(nextX, nextY);
 
