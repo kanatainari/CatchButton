@@ -18,16 +18,16 @@ namespace CatchButton
 
         private async void Button_true_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("축하합니다! 버튼을 잡았어요!");
-
             Button_true.BackColor = Color.Lime;
             Button_true.Refresh();
 
+            await Task.Delay(100);
+            Button_true.BackColor = Color.White;
+
+            MessageBox.Show("축하합니다! 버튼을 잡았어요!");
+
             score = score + 10;
             LabelScore.Text = $"점수: {score}";
-
-            await Task.Delay(100);
-            Button_true.BackColor = SystemColors.Control;
 
             int newWidth = (int)(Button_true.Width * 0.9);
             int newHeight = (int)(Button_true.Height * 0.9);
