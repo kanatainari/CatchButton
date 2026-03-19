@@ -46,5 +46,7 @@ https://github.com/user-attachments/assets/fec26a6f-ff2d-44c9-aa69-3268e6dfd3ad
 https://github.com/user-attachments/assets/f6774e15-54d4-4474-8979-fa9dfcfbc5b6
 - 버튼이 아닌 배경을 잘못 클릭하면 화면이 잠시 빨간색으로 변한다.
 
+https://github.com/user-attachments/assets/e8286889-1178-4ecc-893f-95417f2783fb
 - 버튼을 클릭했을 때, 버튼이 잠시 초록색으로 변한다.
+(버튼 색이 메시지를 닫은 이후에 바뀌고 색이 바뀐후 원래대로 돌아오지 않던 오류 수정)
 
